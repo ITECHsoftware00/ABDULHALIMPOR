@@ -1,4 +1,4 @@
-import myProfile from './assets/profile.jpg';
+import myProfile from '../assets/profile.jpg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
           {/* User Image Frame */}
           <div className="relative w-[300px] h-[400px] md:w-[450px] md:h-[600px] overflow-hidden rounded-[4rem] border-8 border-card-bg shadow-2xl transition-transform duration-700 hover:rotate-2 hover:scale-105">
             <img 
-              src={myProfile}
+              src={myprofile}
               alt="Abdulhalim Muhammad" 
               className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
             />
