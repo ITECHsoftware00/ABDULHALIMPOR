@@ -1,4 +1,4 @@
-import myProfile from '../assets/profile.jpg';
+import myProfile from './assets/profile.jpg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
