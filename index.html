@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdulhalim Muhammad | Senior Software Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              main: 'var(--bg-color)',
+              sec: 'var(--text-color)',
+              thr: '#D4F534', // Signature Lime Accent for professional 'pop'
+              'card-bg': 'var(--card-bg)',
+              'muted': 'var(--muted-color)',
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              space: ['Space Grotesk', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 8s ease-in-out infinite',
+              'marquee': 'marquee 40s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translate(0, 0)' },
+                '50%': { transform: 'translate(-10px, -20px)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        /* Light Mode uses palette-inspired soft tones */
+        --bg-color: #f4f4f5;
+        --text-color: #11140d;
+        --card-bg: #e4e4e7;
+        --muted-color: #727872;
+        --accent: #D4F534;
+        --bg-grid: rgba(17, 20, 13, 0.1);
+      }
+      .dark {
+        /* User Palette Implementation */
+        --bg-color: #11140d; /* Primary Background: Dark Olive Black */
+        --text-color: #b7b4ba; /* Primary Text: Lavender Mist */
+        --card-bg: #363f2f; /* Secondary Background: Dark Forest */
+        --muted-color: #727872; /* Muted Details: Green-Gray */
+        --accent: #D4F534; /* Eye-catching highlight */
+        --bg-grid: rgba(183, 180, 186, 0.08); /* Visible Grid */
+      }
+      * {
+        cursor: none !important;
+        transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s ease, border-color 0.4s ease;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        overflow-x: hidden;
+        position: relative;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      /* Professional Visible Background Grid */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          linear-gradient(var(--bg-grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+        background-size: 60px 60px;
+        z-index: -1;
+        pointer-events: none;
+      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: var(--bg-color); }
+      ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; border: 2px solid var(--bg-color); }
+
+      .cursor-dot {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: var(--accent);
+        border-radius: 50%;
+        z-index: 10000;
+        transition: transform 0.04s linear;
+      }
+      .cursor-outline {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 48px;
+        border: 2px solid var(--accent);
+        border-radius: 50%;
+        z-index: 9999;
+        transition: transform 0.1s ease-out, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: transparent;
+      }
+      .hovered-link .cursor-outline {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(212, 245, 52, 0.1);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.36.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="selection:bg-thr selection:text-black">
+    <div id="root"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline">VIEW</div>
+    <script>
+      const dot = document.getElementById('cursor-dot');
+      const outline = document.getElementById('cursor-outline');
+      window.addEventListener('mousemove', (e) => {
+        dot.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
+        outline.style.transform = `translate(${e.clientX - 24}px, ${e.clientY - 24}px)`;
+      });
+      document.addEventListener('mouseover', (e) => {
+        if (e.target.closest('a') || e.target.closest('button') || e.target.closest('.interactive')) {
+          document.body.classList.add('hovered-link');
+        } else {
+          document.body.classList.remove('hovered-link');
+        }
+      });
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
