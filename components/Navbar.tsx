@@ -31,8 +31,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
             <span className="text-black font-black text-2xl font-space">A</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-space font-black text-xl tracking-tighter text-sec leading-none">MUHAMMAD</span>
-            <span className="text-[10px] font-black tracking-[0.4em] text-thr uppercase mt-1">ENGINEER</span>
+            <span className="font-space font-black text-xl tracking-tighter text-sec leading-none">ABDULHALIM</span>
+            <span className="text-[10px] font-black tracking-[0.4em] text-thr uppercase mt-1">SENIOR ARCHITECT</span>
           </div>
         </Link>
 
@@ -117,8 +117,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
                     <span role="img" aria-label="wave">👋</span> Nice to see you!
                   </h3>
                   <p className="opacity-60 text-lg">
-                    I'm Abdulhalim Muhammad, Software Engineer<br />
-                    based in the Global Market.
+                    I'm Abdulhalim, a Senior Full-Stack Developer &<br />
+                    AI Specialist.
                   </p>
                 </div>
 

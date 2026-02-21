@@ -41,7 +41,7 @@ const CVPage: React.FC = () => {
                 Abdulhalim<br />Muhammad
               </h1>
               <p className="text-thr font-black text-xs tracking-[0.2em] mb-8 uppercase print:text-black/60 italic">
-                Frontend | Backend | Mobile App<br />Developer | Web Developer
+                Senior Full-Stack Developer<br />UI/UX Designer | AI Specialist
               </p>
               <div className="flex flex-col gap-3 text-sm font-bold opacity-70 print:opacity-100">
                 <a href="mailto:tsolution418@gmail.com" className="hover:text-thr transition-colors">tsolution418@gmail.com</a>
@@ -52,7 +52,7 @@ const CVPage: React.FC = () => {
 
             <CVSection title="Profile">
               <p className="text-sm leading-relaxed opacity-80 print:opacity-100 font-medium">
-                Creative and results-driven Full-Stack Developer with experience delivering high-quality mobile apps, web applications, and blockchain solutions. Proficient in React, Flutter, Laravel, Spring Boot, and Solidity. Skilled at leading freelance and client projects from idea to launch, with a strong focus on performance, security, and user experience. Passionate about solving problems with clean, scalable code and building platforms that drive value for users and businesses.
+                Senior Full-Stack Developer and AI Specialist focused on building intelligent, scalable digital infrastructure. I approach development with discipline and strategic thinking: studying the business first, designing the architecture, and then executing with precision. I build systems meant to last—from startup MVPs to AI-powered platforms, my goal remains the same: structure it properly, build it cleanly, and make it scalable.
               </p>
             </CVSection>
 
@@ -88,13 +88,13 @@ const CVPage: React.FC = () => {
           <div className="p-12 md:p-16 flex flex-col gap-16 bg-main/20 print:bg-transparent">
             <CVSection title="Skills">
               <div className="grid grid-cols-1 gap-10">
-                <SkillGroup title="Languages & Frameworks" items="JavaScript, React, Flutter, Laravel, Spring Boot, PHP, Solidity, Rust" />
-                <SkillGroup title="Mobile Development" items="React Native, Flutter" />
-                <SkillGroup title="Backend" items="Node.js, Express.js, Laravel, Spring Boot" />
-                <SkillGroup title="Blockchain" items="Smart Contracts, DeFi, Token Integration, NFT Development" />
-                <SkillGroup title="Databases" items="MySQL, MongoDB, PostgreSQL" />
-                <SkillGroup title="Tools" items="Git, Figma, Firebase, Docker, REST APIs, Web3.js" />
-                <SkillGroup title="Others" items="UGC marketing, Facebook Ads, Shopify, WordPress" />
+                <SkillGroup title="Frontend" items="React, Next.js, TypeScript, Tailwind CSS, Framer Motion" />
+                <SkillGroup title="Backend & DB" items="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs" />
+                <SkillGroup title="AI & Automation" items="AI Integration, Intelligent Systems, Workflow Automation" />
+                <SkillGroup title="Infrastructure" items="System Architecture, AWS, Cloud Infrastructure, DevOps, CI/CD" />
+                <SkillGroup title="Design" items="UI/UX Design, Figma, Product Thinking, User Experience" />
+                <SkillGroup title="Mobile" items="React Native, Mobile-Responsive Design" />
+                <SkillGroup title="Tools" items="Git, Docker, Firebase, Vercel" />
               </div>
             </CVSection>
 

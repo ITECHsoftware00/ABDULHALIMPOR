@@ -26,10 +26,10 @@ const Hero: React.FC = () => {
       <div className="absolute top-28 left-0 w-full overflow-hidden z-10 pointer-events-none opacity-90 select-none">
         <div className="flex whitespace-nowrap animate-marquee">
           <span className="text-5xl md:text-8xl font-black font-space tracking-tighter uppercase text-sec pr-12 flex items-center gap-4">
-            UX DESIGNER <span className="text-thr text-4xl">🍀</span> FULL-STACK DEVELOPER UI & UX ENTHUSIAST
+            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST
           </span>
           <span className="text-5xl md:text-8xl font-black font-space tracking-tighter uppercase text-sec pr-12 flex items-center gap-4">
-            UX DESIGNER <span className="text-thr text-4xl">🍀</span> FULL-STACK DEVELOPER UI & UX ENTHUSIAST
+            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST
           </span>
         </div>
       </div>
@@ -75,11 +75,11 @@ const Hero: React.FC = () => {
           </h1>
 
           <div className="flex flex-col gap-6 text-xl md:text-2xl font-medium leading-relaxed text-sec/70 mb-12 border-l-4 border-thr pl-6">
-            <p>
-              I am a driven software engineer specialized in crafting responsive web architecture and high-performance mobile apps.
+            <p className="font-black text-sec uppercase tracking-tight">
+              I don’t just build applications. <span className="text-thr italic">I architect intelligent digital systems.</span>
             </p>
             <p className="text-lg">
-              Drawing inspiration from art and logic, I bring ideas to life—focusing deeply on scalable architecture, user experience, and aesthetic precision. I take ownership from conceptualization to deployment, making sure the final product captivates users and serves business goals.
+              As a Senior Full-Stack Developer, UI/UX Designer, and AI Specialist, I design and develop complete, production-ready solutions from concept to deployment. My focus is not just writing code. It’s engineering scalable systems that are structured correctly, perform under pressure, and evolve with your business.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             <span className="text-thr font-black text-[10px] tracking-[0.5em] uppercase">Core Tech Stack</span>
-            <span className="text-sec font-black text-2xl tracking-tighter">Flutter • React • Solidity</span>
+            <span className="text-sec font-black text-2xl tracking-tighter uppercase">React • Next.js • Python • AI</span>
           </div>
         </div>
 

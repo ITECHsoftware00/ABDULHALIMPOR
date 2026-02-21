@@ -42,10 +42,10 @@ const AboutSection: React.FC = () => {
             className="flex flex-col gap-14"
           >
             <p className="text-4xl md:text-6xl font-black leading-[1] tracking-tight text-sec">
-              I am Abdulhalim Muhammad — architect of <span className="text-thr">high-impact</span> digital ecosystems.
+              I am Abdulhalim — architect of <span className="text-thr">intelligent</span>, scalable digital infrastructure.
             </p>
             <p className="text-2xl opacity-70 leading-relaxed max-w-xl font-medium border-l-8 border-muted/20 pl-10">
-              Transforming raw ideas into production-ready software isn't just a job; it's a process of elimination—removing everything that doesn't add value until only the perfect solution remains.
+              I approach development with discipline and strategic thinking. I study the business first, then I design the architecture, and then I execute with precision. I don’t build temporary solutions. I build systems meant to last.
             </p>
 
             <div className="flex flex-wrap gap-8 mt-8">

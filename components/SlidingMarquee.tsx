@@ -12,7 +12,7 @@ const SlidingMarquee: React.FC = () => {
         transition={{ duration: 1 }}
         className="rotate-2 scale-110"
       >
-        <MarqueeRow text="AVAILABLE FOR NEW PROJECTS • FULL STACK SOLUTIONS • UI/UX EXCELLENCE • " />
+        <MarqueeRow text="SENIOR FULL-STACK SOLUTIONS • AI INTEGRATION • INTELLIGENT ARCHITECTURE • " />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -21,7 +21,7 @@ const SlidingMarquee: React.FC = () => {
         transition={{ duration: 1, delay: 0.2 }}
         className="-rotate-2 scale-110 mt-8"
       >
-        <MarqueeRow text="NEXT.JS • REACT • TYPESCRIPT • TAILWIND • NODE.JS • THREE.JS • DOCKER • " />
+        <MarqueeRow text="NEXT.JS • REACT • TYPESCRIPT • PYTHON • AI • NODE.JS • AWS • " />
       </motion.div>
     </div>
   );

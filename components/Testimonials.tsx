@@ -53,9 +53,6 @@ const Testimonials: React.FC = () => {
                 </p>
 
                 <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-thr/20 grayscale group-hover:grayscale-0 transition-all">
-                    <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" />
-                  </div>
                   <div>
                     <h4 className="text-xl font-black text-sec tracking-tight uppercase">{testimonial.name}</h4>
                     <p className="text-xs font-bold text-thr tracking-widest uppercase opacity-60">
