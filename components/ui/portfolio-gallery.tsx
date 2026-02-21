@@ -39,7 +39,7 @@ export function PortfolioGallery({
 }: PortfolioGalleryProps) {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
-    const defaultImages = [
+    const defaultImages: Array<{ src: string; alt: string; title?: string }> = [
         {
             src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
             alt: "SaaS Dashboard Design",

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { CoreSkillsTimeline } from './ui/CoreSkillsTimeline';
 
 const AboutSection: React.FC = () => {
   return (
@@ -72,6 +73,10 @@ const AboutSection: React.FC = () => {
           <Stat value="50+" label="Live Deployments" />
           <Stat value="24/7" label="System Uptime" />
         </div>
+      </div>
+
+      <div className="mt-32 w-full border-t border-muted/10">
+        <CoreSkillsTimeline />
       </div>
     </section>
   );
