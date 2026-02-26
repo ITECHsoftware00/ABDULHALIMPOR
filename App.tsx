@@ -13,7 +13,6 @@ import SlidingMarquee from './components/SlidingMarquee';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CVPage from './components/CVPage';
-import AIChatWidget from './components/AIChatWidget';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -89,7 +88,6 @@ const App: React.FC = () => {
           <Route path="/cv" element={<CVPage />} />
         </Routes>
         <Footer />
-        <AIChatWidget />
       </div>
     </Router>
   );

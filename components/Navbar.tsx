@@ -117,8 +117,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
                     <span role="img" aria-label="wave">👋</span> Nice to see you!
                   </h3>
                   <p className="opacity-60 text-lg">
-                    I'm Abdulhalim, a Senior Full-Stack Developer &<br />
-                    AI Specialist.
+                    I'm Abdulhalim, a Senior Full-Stack Developer,<br />
+                    AI Architect, & Project Manager.
                   </p>
                 </div>
 

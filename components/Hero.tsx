@@ -26,10 +26,10 @@ const Hero: React.FC = () => {
       <div className="absolute top-28 left-0 w-full overflow-hidden z-10 pointer-events-none opacity-90 select-none">
         <div className="flex whitespace-nowrap animate-marquee">
           <span className="text-5xl md:text-8xl font-black font-space tracking-tighter uppercase text-sec pr-12 flex items-center gap-4">
-            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST
+            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST <span className="text-thr text-4xl">🍀</span> AI ARCHITECT <span className="text-thr text-4xl">🍀</span> PROJECT MANAGER
           </span>
           <span className="text-5xl md:text-8xl font-black font-space tracking-tighter uppercase text-sec pr-12 flex items-center gap-4">
-            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST
+            SENIOR FULL-STACK DEVELOPER <span className="text-thr text-4xl">🍀</span> UI/UX DESIGNER <span className="text-thr text-4xl">🍀</span> AI SPECIALIST <span className="text-thr text-4xl">🍀</span> AI ARCHITECT <span className="text-thr text-4xl">🍀</span> PROJECT MANAGER
           </span>
         </div>
       </div>
@@ -41,15 +41,16 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative w-full aspect-square md:aspect-[4/5] bg-[#ececec] dark:bg-[#1a1a1a] rounded-3xl overflow-hidden flex items-end justify-center shadow-2xl border-4 border-muted/10 group"
+          className="relative w-full aspect-square md:aspect-[4/5] bg-main rounded-[3rem] overflow-hidden flex items-end justify-center shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] border-4 border-thr/10 group animate-pulse-slow hover:border-thr/50 transition-all duration-700"
         >
+          <div className="absolute inset-0 bg-gradient-to-t from-thr/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
           <img
             src={myProfile}
             alt="Abdulhalim Muhammad"
-            className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+            className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-105 transition-all duration-700"
           />
-          {/* Subtle accent curve from top inspired by Image 2 */}
-          <div className="absolute -top-32 -right-32 w-64 h-64 bg-thr rounded-full blur-[100px] z-0 opacity-40"></div>
+          {/* Glowing accent curve from top */}
+          <div className="absolute -top-32 -right-32 w-80 h-80 bg-thr rounded-full blur-[120px] z-0 opacity-50 group-hover:opacity-80 transition-opacity duration-700"></div>
         </motion.div>
 
         {/* Right Side: Text & Talk a little about me */}
@@ -79,7 +80,7 @@ const Hero: React.FC = () => {
               I don’t just build applications. <span className="text-thr italic">I architect intelligent digital systems.</span>
             </p>
             <p className="text-lg">
-              As a Senior Full-Stack Developer, UI/UX Designer, and AI Specialist, I design and develop complete, production-ready solutions from concept to deployment. My focus is not just writing code. It’s engineering scalable systems that are structured correctly, perform under pressure, and evolve with your business.
+              As a Senior Full-Stack Developer, UI/UX Designer, AI Specialist, AI Architect, and Professional Project Manager, I design and develop complete, production-ready solutions from concept to deployment. My focus is not just writing code. It’s engineering scalable systems that are structured correctly, perform under pressure, and evolve with your business.
             </p>
           </div>
 

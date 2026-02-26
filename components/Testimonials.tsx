@@ -38,12 +38,14 @@ const Testimonials: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
               key={testimonial.id}
-              className={`bg-card-bg p-12 rounded-[4rem] border-2 border-muted/10 relative group transition-all duration-700 hover:border-thr/40 shadow-xl ${idx === 1 ? 'lg:-translate-y-12' : ''}`}
+              className={`bg-card-bg/60 backdrop-blur-2xl p-12 rounded-[4rem] border-2 border-muted/10 relative group transition-all duration-700 hover:border-thr/60 shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_0_80px_rgba(100,200,100,0.15)] hover:-translate-y-4 overflow-hidden ${idx === 1 ? 'lg:-translate-y-12 lg:hover:-translate-y-16' : ''}`}
             >
+              {/* Animated Glow inside card */}
+              <div className="absolute inset-0 bg-gradient-to-br from-thr/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
               {/* Quote Icon Background */}
-              <div className="absolute top-10 right-10 opacity-5 group-hover:opacity-10 transition-opacity">
+              <div className="absolute top-10 right-10 opacity-5 group-hover:opacity-20 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
                 <svg className="w-24 h-24 text-thr" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 7.34315 11.3602 6 13.017 6H19.017C20.6739 6 22.017 7.34315 22.017 9V15C22.017 17.2091 20.2261 19 18.017 19H14.017V21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H4.017C3.46472 8 3.017 8.44772 3.017 9V12C3.017 12.5523 2.56928 13 2.017 13H0.017C-0.535282 13 -1.017 12.5523 -1.017 12V9C-1.017 7.34315 0.326142 6 2.017 6H8.017C9.67386 6 11.017 7.34315 11.017 9V15C11.017 17.2091 9.22614 19 7.017 19H3.017V21H3.017Z" />
+                  <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 7.34315 11.3602 6 13.017 6H19.017C20.6739 6 22.017 7.34315 22.017 9V15C22.017 17.2091 20.2261 19 18.017 19H14.017V21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H4.017C3.46472 8 3.017 8.44772 3.017 9V12C3.017 12.5523 2.56928 13 2.017 13H0.017C-0.535282 13 -1.017 12.5523 -1.017 12V9C-1.017 7.34315 0.326142 6 2.017 6H8.017C9.67386 6 11.017 7.34315 11.017 9V15C11.017 17.2091 9.2261 19 7.017 19H3.017V21H3.017Z" />
                 </svg>
               </div>
 

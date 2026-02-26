@@ -40,8 +40,8 @@ const CVPage: React.FC = () => {
               <h1 className="text-5xl font-space font-black tracking-tighter leading-none mb-6 text-sec print:text-black uppercase">
                 Abdulhalim<br />Muhammad
               </h1>
-              <p className="text-thr font-black text-xs tracking-[0.2em] mb-8 uppercase print:text-black/60 italic">
-                Senior Full-Stack Developer<br />UI/UX Designer | AI Specialist
+              <p className="text-thr font-black text-xs tracking-[0.2em] mb-8 uppercase print:text-black/60 italic leading-relaxed">
+                Senior Full-Stack Developer | UI/UX Designer<br />AI Specialist | AI Architect | Project Manager
               </p>
               <div className="flex flex-col gap-3 text-sm font-bold opacity-70 print:opacity-100">
                 <a href="mailto:tsolution418@gmail.com" className="hover:text-thr transition-colors">tsolution418@gmail.com</a>
@@ -52,7 +52,7 @@ const CVPage: React.FC = () => {
 
             <CVSection title="Profile">
               <p className="text-sm leading-relaxed opacity-80 print:opacity-100 font-medium">
-                Senior Full-Stack Developer and AI Specialist focused on building intelligent, scalable digital infrastructure. I approach development with discipline and strategic thinking: studying the business first, designing the architecture, and then executing with precision. I build systems meant to last—from startup MVPs to AI-powered platforms, my goal remains the same: structure it properly, build it cleanly, and make it scalable.
+                Senior Full-Stack Developer, AI Specialist, AI Architect, and Professional Project Manager focused on building intelligent, scalable digital infrastructure. I approach development with discipline and strategic thinking: studying the business first, designing the architecture, and then executing with precision. I build systems meant to last—from startup MVPs to AI-powered platforms, my goal remains the same: structure it properly, build it cleanly, and make it scalable.
               </p>
             </CVSection>
 
@@ -90,7 +90,8 @@ const CVPage: React.FC = () => {
               <div className="grid grid-cols-1 gap-10">
                 <SkillGroup title="Frontend" items="React, Next.js, TypeScript, Tailwind CSS, Framer Motion" />
                 <SkillGroup title="Backend & DB" items="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs" />
-                <SkillGroup title="AI & Automation" items="AI Integration, Intelligent Systems, Workflow Automation" />
+                <SkillGroup title="AI & Automation" items="AI Integration, Intelligent Systems, Workflow Automation, AI Architecture" />
+                <SkillGroup title="Management" items="Professional Project Management, Agile, Team Leadership" />
                 <SkillGroup title="Infrastructure" items="System Architecture, AWS, Cloud Infrastructure, DevOps, CI/CD" />
                 <SkillGroup title="Design" items="UI/UX Design, Figma, Product Thinking, User Experience" />
                 <SkillGroup title="Mobile" items="React Native, Mobile-Responsive Design" />

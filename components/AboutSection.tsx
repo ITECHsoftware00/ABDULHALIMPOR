@@ -43,7 +43,7 @@ const AboutSection: React.FC = () => {
             className="flex flex-col gap-14"
           >
             <p className="text-4xl md:text-6xl font-black leading-[1] tracking-tight text-sec">
-              I am Abdulhalim — architect of <span className="text-thr">intelligent</span>, scalable digital infrastructure.
+              I am Abdulhalim — AI Architect, Project Manager & builder of <span className="text-thr">intelligent</span>, scalable digital infrastructure.
             </p>
             <p className="text-2xl opacity-70 leading-relaxed max-w-xl font-medium border-l-8 border-muted/20 pl-10">
               I approach development with discipline and strategic thinking. I study the business first, then I design the architecture, and then I execute with precision. I don’t build temporary solutions. I build systems meant to last.

@@ -3,6 +3,96 @@ import { Experience, Project, Service, Testimonial } from './types';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'unops-collect',
+    title: 'UNOPS Collect',
+    category: 'Productivity',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'UNOPS Collect is a phone-based replacement for paper forms.',
+    techStack: ['Android', 'Kotlin', 'Java'],
+    features: ['Phone-based form completion', 'Offline data collection'],
+    clientLink: 'https://play.google.com/store/apps/details?id=org.unops.collect'
+  },
+  {
+    id: 'so-vegan',
+    title: 'SO VEGAN: Healthy Recipes',
+    category: 'Food & Drink',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'Over 600 quick, easy and delicious plant-based recipes, shopping list + videos.',
+    techStack: ['React Native', 'TypeScript', 'Firebase'],
+    features: ['Plant-based recipes', 'Shopping lists', 'Recipe videos'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.wearesovegan.app'
+  },
+  {
+    id: 'patch-me',
+    title: 'Patch Me: Eye Patch Tracking',
+    category: 'Medical / Health',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'An app that allows parents to track the eye patching time for their children.',
+    techStack: ['Flutter', 'Dart', 'SQLite'],
+    features: ['Time tracking', 'Parental dashboard', 'Reminders'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.edocllc.patch_me'
+  },
+  {
+    id: 'leaf-lens',
+    title: 'Leaf Lens',
+    category: 'Education / Utilities',
+    image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229ce?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'Snap, Detect, Protect. Identifying plant diseases instantly.',
+    techStack: ['Python', 'TensorFlow', 'Android'],
+    features: ['Image recognition', 'Disease detection', 'Protection tips'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.leaflens.pdda2'
+  },
+  {
+    id: 'butterfly-iq',
+    title: 'Butterfly iQ — Ultrasound',
+    category: 'Medical',
+    image: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'One probe, whole body imaging. Advanced ultrasound imaging application.',
+    techStack: ['C++', 'Swift', 'Kotlin'],
+    features: ['Whole body imaging', 'Real-time ultrasound', 'Cloud integration'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.butterflynetinc.helios'
+  },
+  {
+    id: 'habo',
+    title: 'Habo (habit tracker)',
+    category: 'Productivity / Lifestyle',
+    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fd16f?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'Habo is a simple, open-source habit tracker for everyone.',
+    techStack: ['React Native', 'Redux', 'Node.js'],
+    features: ['Habit tracking', 'Open-source', 'Progress visualization'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.pavlenko.Habo'
+  },
+  {
+    id: 'life-checklist',
+    title: 'Life Checklist',
+    category: 'Productivity',
+    image: 'https://images.unsplash.com/photo-1507925922837-326f12a15f58?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'A simple life checklist app that keeps track of the items you complete.',
+    techStack: ['Flutter', 'Dart', 'Firebase'],
+    features: ['Minimalist checklists', 'Item tracking', 'Progress milestones'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.vector123.lifechecklist'
+  },
+  {
+    id: 'mindful-app',
+    title: 'Mindful : Focus & Screen Time',
+    category: 'Productivity / Health',
+    image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'Control screen time, block distractions and boost focus with Mindful (OpenSource).',
+    techStack: ['Kotlin', 'Android SDK', 'Room'],
+    features: ['Screen time control', 'Distraction blocking', 'Focus timer'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.mindful.android'
+  },
+  {
+    id: 'trinity-orientation',
+    title: 'Trinity Orientation',
+    category: 'Education',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop',
+    fullDescription: 'Trinity Orientation application for new students.',
+    techStack: ['React Native', 'iOS', 'Android'],
+    features: ['Campus maps', 'Event schedules', 'Student resources'],
+    clientLink: 'https://play.google.com/store/apps/details?id=com.tory.trinityOrientation&hl=en_US'
+  },
+  {
     id: 'future-fitness',
     title: 'Future Fitness',
     category: 'Health / SaaS',
